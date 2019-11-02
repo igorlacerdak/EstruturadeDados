@@ -35,7 +35,13 @@ namespace ListaEstruturadeDados
                     Exercicio03.exercicio3();
                     break;
                 case "4":
-                    Console.WriteLine($"Your result");
+                    Exercicio04.exercicio4();
+                    break;
+                case "5":
+                    Exercicio05.exercicio5();
+                    break;
+                case "6":
+                    Exercicio06.exercicio6();
                     break;
             }
             // Wait for the user to respond before closing.
