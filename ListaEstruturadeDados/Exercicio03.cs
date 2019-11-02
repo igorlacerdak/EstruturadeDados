@@ -10,7 +10,7 @@ namespace ListaEstruturadeDados
     {
         public static void exercicio3()
         {
-            Console.WriteLine("EXERCICIO 02 #\r");
+            Console.WriteLine("EXERCICIO 03 #\r");
             Console.WriteLine("------------------------\n");
 
             Console.WriteLine("Digite o numero de Linhas e Colunas (Nesta Sequencia) separadas por VIRGULA: ");
