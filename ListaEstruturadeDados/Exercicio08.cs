@@ -28,7 +28,7 @@ namespace ListaEstruturadeDados
             lista.Sort();
             Console.WriteLine("A lista tem " + lista.Count + " itens:");
             //Imprime cada item da lista
-            lista.ForEach(i => Console.WriteLine(i));
+            lista.ForEach(personagem  => Console.WriteLine(Convert.ToString(p.nome)));;
 
         }
     }
