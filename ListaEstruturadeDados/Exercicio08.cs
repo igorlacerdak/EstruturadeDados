@@ -18,7 +18,7 @@ namespace ListaEstruturadeDados
             while (opcao == "1")
             {
                 Console.WriteLine("Digite um nome para inserir na lista:");
-                string nome = Console.ReadLine();
+                 p.nome = Console.ReadLine();
                 //Adiciona o item à lista
                 lista.Add(p.nome);
                 Console.WriteLine("Deseja inserir outro nome? 1-SIM | 2-NÃO");
@@ -28,8 +28,10 @@ namespace ListaEstruturadeDados
             lista.Sort();
             Console.WriteLine("A lista tem " + lista.Count + " itens:");
             //Imprime cada item da lista
-            lista.ForEach(personagem  => Console.WriteLine(Convert.ToString(p.nome)));;
-
+            foreach (string c in lista)
+            {
+                Console.WriteLine(c.ToString());
+            }
         }
     }
 }
