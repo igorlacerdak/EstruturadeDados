@@ -18,7 +18,7 @@ namespace ListaEstruturadeDados
             while (opcao == "1")
             {
                 Console.WriteLine("Digite um nome para inserir na lista:");
-                string p.nome = Console.ReadLine();
+                string nome = Console.ReadLine();
                 //Adiciona o item à lista
                 lista.Add(p.nome);
                 Console.WriteLine("Deseja inserir outro nome? 1-SIM | 2-NÃO");
