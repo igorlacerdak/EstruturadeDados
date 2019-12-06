@@ -8,9 +8,14 @@ namespace ListaEstruturadeDados
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            EscolheExercicio();
+        }
 
+        static protected void EscolheExercicio()
+        {
             // Ask the user to choose an option.
             Console.WriteLine("Escolha o Exercicio Desejado:");
             Console.WriteLine("\tExercicio - 1");
@@ -22,13 +27,16 @@ namespace ListaEstruturadeDados
             Console.WriteLine("\tExercicio - 7");
             Console.WriteLine("\tExercicio - 8");
             Console.WriteLine("\tExercicio - 9");
+            Console.WriteLine("\tExercicio - 10");
             Console.Write("Qual exercicio? ");
+
+
 
             // Use a switch statement to do the math.
             switch (Console.ReadLine())
             {
                 case "1":
-                    Exercicio01.exercicio1(); 
+                    Exercicio01.exercicio1();
                     break;
                 case "2":
                     Exercicio02.exercicio2();
@@ -51,11 +59,26 @@ namespace ListaEstruturadeDados
                 case "8":
                     Exercicio08.exercicio8();
                     break;
+                case "9":
+                    Exercicio09.exercicio9();
+                    break;
+                    //case "10":
+                    //    Exercicio10.exercicio10();
+                    //    break;
             }
-            // Wait for the user to respond before closing.
-            Console.Write("Press any key to close the Calculator console app...");
-            Console.ReadKey();
 
+
+            // Wait for the user to respond before closing.
+            Console.WriteLine("Deseja buscar outro exercício? (S) Sim / (N) Não");
+            string buscarNovamente = Console.ReadLine();
+
+            while (buscarNovamente.Equals("S"))
+            {
+                EscolheExercicio();
+            }
+
+            Console.Write("Pressione qualquer tecla para sair...");
+            Environment.Exit(0);
         }
     }
 }
