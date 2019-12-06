@@ -28,6 +28,7 @@ namespace ListaEstruturadeDados
             Console.WriteLine("\tExercicio - 8");
             Console.WriteLine("\tExercicio - 9");
             Console.WriteLine("\tExercicio - 10");
+            Console.WriteLine("\tExercicio - 11");
             Console.Write("Qual exercicio? ");
 
 
@@ -62,9 +63,12 @@ namespace ListaEstruturadeDados
                 case "9":
                     Exercicio09.exercicio9();
                     break;
-                    //case "10":
-                    //    Exercicio10.exercicio10();
-                    //    break;
+                case "10":
+                    Exercicio10.exercicio10();
+                    break;
+                case "11":
+                    Exercicio11.exercicio11();
+                    break;
             }
 
 
